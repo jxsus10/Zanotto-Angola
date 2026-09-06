@@ -261,6 +261,50 @@ function initCelebrityVideo() {
   updateSliderFill(video.volume);
   updateSoundIcon(video.muted, video.volume);
 
+  let visibilityTimer = null;
+
+  function isElementInView(el) {
+    if (!el) return false;
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    // Calcular altura visível dentro da janela
+    const visibleTop = Math.max(0, rect.top);
+    const visibleBottom = Math.min(vh, rect.bottom);
+    const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+    const totalHeight = rect.height || (rect.bottom - rect.top) || 500;
+    const visibleRatio = visibleHeight / totalHeight;
+
+    // O elemento está visível se pelo menos 35% dele e no mínimo 120px estiverem no ecrã
+    return visibleRatio >= 0.35 && visibleHeight >= 120;
+  }
+
+  function checkVideoVisibility() {
+    if (video.paused) return;
+    const target = card || video;
+    if (!isElementInView(target)) {
+      pauseVideo();
+    }
+  }
+
+  function startVisibilityWatch() {
+    stopVisibilityWatch();
+    visibilityTimer = setInterval(() => {
+      if (!video.paused) {
+        checkVideoVisibility();
+      } else {
+        stopVisibilityWatch();
+      }
+    }, 150);
+  }
+
+  function stopVisibilityWatch() {
+    if (visibilityTimer) {
+      clearInterval(visibilityTimer);
+      visibilityTimer = null;
+    }
+  }
+
   function playVideo() {
     const playPromise = video.play();
     if (playPromise !== undefined) {
@@ -268,6 +312,7 @@ function initCelebrityVideo() {
         if (card) card.classList.add('is-playing');
         if (overlayBtn) overlayBtn.classList.add('hidden');
         updatePlayIcons(true);
+        startVisibilityWatch();
       }).catch(() => {
         // Fallback caso o navegador exija mute para iniciar reprodução
         video.muted = true;
@@ -278,12 +323,14 @@ function initCelebrityVideo() {
         if (card) card.classList.add('is-playing');
         if (overlayBtn) overlayBtn.classList.add('hidden');
         updatePlayIcons(true);
+        startVisibilityWatch();
       });
     }
   }
 
   function pauseVideo() {
     video.pause();
+    stopVisibilityWatch();
     if (card) card.classList.remove('is-playing');
     if (overlayBtn) overlayBtn.classList.remove('hidden');
     updatePlayIcons(false);
@@ -362,43 +409,11 @@ function initCelebrityVideo() {
     });
   }
 
-  // Pausar automaticamente quando o utilizador faz scroll para fora da secção do vídeo
-  function checkVideoOffscreen() {
-    if (video.paused) return;
-    const target = card || video;
-    const rect = target.getBoundingClientRect();
-    const vh = window.innerHeight || document.documentElement.clientHeight;
-
-    // O vídeo saiu do ecrã se:
-    // - O fundo do vídeo subiu além do topo da janela (rolou para baixo)
-    // - O topo do vídeo desceu além do fundo da janela (rolou para cima)
-    const isOutOfScreen = (rect.bottom <= 80) || (rect.top >= vh - 40);
-    if (isOutOfScreen) {
-      pauseVideo();
-    }
-  }
-
-  // Eventos diretos de scroll e touch para resposta instantânea
-  window.addEventListener('scroll', checkVideoOffscreen, { passive: true });
-  window.addEventListener('touchmove', checkVideoOffscreen, { passive: true });
-
-  // Observador de intersecção como garantia adicional
-  if ('IntersectionObserver' in window) {
-    const videoObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting || entry.intersectionRatio === 0) {
-          if (!video.paused) {
-            pauseVideo();
-          }
-        }
-      });
-    }, {
-      threshold: [0, 0.1]
-    });
-
-    videoObserver.observe(video);
-    if (card) videoObserver.observe(card);
-  }
+  // Eventos de scroll, toque e redimensionamento para deteção imediata
+  window.addEventListener('scroll', checkVideoVisibility, { passive: true });
+  document.addEventListener('scroll', checkVideoVisibility, { passive: true, capture: true });
+  window.addEventListener('touchmove', checkVideoVisibility, { passive: true });
+  window.addEventListener('resize', checkVideoVisibility, { passive: true });
 
   // Pausar se o utilizador trocar de aba ou minimizar a janela
   document.addEventListener('visibilitychange', () => {

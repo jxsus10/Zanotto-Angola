@@ -362,6 +362,33 @@ function initCelebrityVideo() {
     });
   }
 
+  // Pausar automaticamente quando o utilizador faz scroll para fora da secção do vídeo
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting || entry.intersectionRatio < 0.2) {
+          if (!video.paused) {
+            pauseVideo();
+          }
+        }
+      });
+    }, {
+      threshold: [0, 0.2, 0.5]
+    });
+
+    videoObserver.observe(card || video);
+  } else {
+    // Fallback para navegadores legados via evento de scroll
+    window.addEventListener('scroll', () => {
+      if (video.paused) return;
+      const rect = (card || video).getBoundingClientRect();
+      const isVisible = rect.bottom > 60 && rect.top < (window.innerHeight - 60);
+      if (!isVisible) {
+        pauseVideo();
+      }
+    }, { passive: true });
+  }
+
   // Ação de pré-preenchimento para a cozinha
   if (inquireBtn) {
     inquireBtn.addEventListener('click', () => {

@@ -363,31 +363,49 @@ function initCelebrityVideo() {
   }
 
   // Pausar automaticamente quando o utilizador faz scroll para fora da secção do vídeo
+  function checkVideoOffscreen() {
+    if (video.paused) return;
+    const target = card || video;
+    const rect = target.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+
+    // O vídeo saiu do ecrã se:
+    // - O fundo do vídeo subiu além do topo da janela (rolou para baixo)
+    // - O topo do vídeo desceu além do fundo da janela (rolou para cima)
+    const isOutOfScreen = (rect.bottom <= 80) || (rect.top >= vh - 40);
+    if (isOutOfScreen) {
+      pauseVideo();
+    }
+  }
+
+  // Eventos diretos de scroll e touch para resposta instantânea
+  window.addEventListener('scroll', checkVideoOffscreen, { passive: true });
+  window.addEventListener('touchmove', checkVideoOffscreen, { passive: true });
+
+  // Observador de intersecção como garantia adicional
   if ('IntersectionObserver' in window) {
     const videoObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (!entry.isIntersecting || entry.intersectionRatio < 0.2) {
+        if (!entry.isIntersecting || entry.intersectionRatio === 0) {
           if (!video.paused) {
             pauseVideo();
           }
         }
       });
     }, {
-      threshold: [0, 0.2, 0.5]
+      threshold: [0, 0.1]
     });
 
-    videoObserver.observe(card || video);
-  } else {
-    // Fallback para navegadores legados via evento de scroll
-    window.addEventListener('scroll', () => {
-      if (video.paused) return;
-      const rect = (card || video).getBoundingClientRect();
-      const isVisible = rect.bottom > 60 && rect.top < (window.innerHeight - 60);
-      if (!isVisible) {
-        pauseVideo();
-      }
-    }, { passive: true });
+    videoObserver.observe(video);
+    if (card) videoObserver.observe(card);
   }
+
+  // Pausar se o utilizador trocar de aba ou minimizar a janela
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && !video.paused) {
+      pauseVideo();
+    }
+  });
 
   // Ação de pré-preenchimento para a cozinha
   if (inquireBtn) {

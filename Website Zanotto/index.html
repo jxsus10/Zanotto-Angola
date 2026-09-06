@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanotto Interiores | Arquitetura de Interiores & Marcenaria por Medida em Luanda</title>
+  <meta name="description" content="Estúdio de arquitetura de interiores e marcenaria de autor em Luanda, Angola. Sofisticação silenciosa, design minimalista e mobiliário exclusivo por medida.">
+  <meta name="keywords" content="Design de Interiores Luanda, Arquitetura Angola, Marcenaria por Medida, Mobiliário Luanda, Zanotto Interiores, Decoração Talatona">
+  
+  <!-- Open Graph / Redes Sociais e WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zanotto Interiores | Arquitetura & Design de Interiores em Luanda">
+  <meta property="og:description" content="Espaços com alma. Sofisticação silenciosa e marcenaria exclusiva em Luanda, Angola.">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+  <!-- Folhas de Estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Marca d'água geométrica sutil no background -->
+  <div class="geometric-bg-pattern" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVBAR FLUTUANTE
+       ========================================================================== -->
+  <header class="header" id="main-header">
+    <div class="container header-container">
+      <!-- Logótipo Oficial -->
+      <a href="#inicio" class="brand-logo-link" aria-label="Zanotto Interiores Início">
+        <img src="assets/images/logo.png" alt="Zanotto Interiores Logótipo" class="brand-logo-img">
+        <div class="brand-text-block">
+          <span class="brand-title">ZANOTTO</span>
+          <span class="brand-subtitle">INTERIORES</span>
+        </div>
+      </a>
+
+      <!-- Menu Principal de Navegação -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+          <li><a href="#localizacao" class="nav-link">Atelier</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#processo" class="nav-link">Processo</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações de Cabeçalho -->
+      <div class="nav-actions">
+        <!-- CTA Directo -->
+        <a href="#contacto" class="btn btn-primary btn-header-consult">
+          <span>Marcar Consulta</span>
+        </a>
+
+        <!-- Botão Mobile -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu de navegação">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION — VÍDEO DE FUNDO EM ECRÃ INTEIRO
+       ========================================================================== -->
+  <section class="hero-section" id="inicio">
+    <!-- Mídia de Fundo (Vídeo de Assinatura Zanotto - video2) -->
+    <div class="hero-media-wrapper">
+      <video id="hero-bg-video" class="hero-video" autoplay muted loop playsinline poster="assets/images/minimal-fluted-tv.jpg">
+        <source src="assets/videos/hero-video.mp4" type="video/mp4">
+        <!-- Fallback de imagem caso o vídeo não seja suportado -->
+        <img src="assets/images/minimal-fluted-tv.jpg" alt="Interior de Assinatura Zanotto" class="hero-video-fallback">
+      </video>
+      <div class="hero-gradient-overlay"></div>
+      <div class="hero-geometric-lines"></div>
+    </div>
+
+    <div class="container hero-content">
+      <!-- Badge de Origem & Excelência -->
+      <div class="hero-badge reveal-on-scroll">
+        <span class="hero-badge-dot"></span>
+        <span>Atelier de Interiores & Marcenaria • Luanda, Angola</span>
+      </div>
+
+      <!-- Título de Grande Impacto -->
+      <h1 class="hero-title reveal-on-scroll delay-100">
+        Espaços com Alma.<br>
+        <span class="hero-title-accent">Sofisticação Silenciosa</span> em Angola.
+      </h1>
+
+      <!-- Texto Introdutório -->
+      <p class="hero-lead reveal-on-scroll delay-200">
+        Concebemos projetos de arquitetura de interiores e mobiliário exclusivo por medida que combinam a pureza do design minimalista contemporâneo ao aconchego das texturas nobres e à luz singular de Luanda.
+      </p>
+
+      <!-- Botões de Ação -->
+      <div class="hero-actions reveal-on-scroll delay-300">
+        <a href="#contacto" class="btn btn-primary">
+          <span>Marcar Consulta</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#portfolio" class="btn btn-outline-light">
+          <span>Ver Portfólio</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Controlo de Reprodução do Vídeo -->
+    <button type="button" class="video-control-btn" id="video-toggle-btn" aria-label="Pausar ou reproduzir vídeo">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+      <span>Pausar</span>
+    </button>
+
+    <!-- Indicador de Scroll -->
+    <a href="#sobre" class="hero-scroll-indicator" aria-label="Rolar para a secção Sobre Nós">
+      <span>Descobrir</span>
+      <div class="scroll-line-container">
+        <div class="scroll-line-animated"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- ==========================================================================
+       BARRA DE PRESTÍGIO & ESTATÍSTICAS
+       ========================================================================== -->
+  <section class="stats-banner" id="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-number" data-counter="1600" data-format="thousands"><span class="stat-prefix">+</span><span class="count-value">1.600</span><span class="stat-number-accent">.</span></span>
+          <span class="stat-label">Clientes & Lares Entregues</span>
+        </div>
+        <div class="stat-item reveal-on-scroll delay-100">
+          <span class="stat-number" data-counter="102"><span class="count-value">102</span><span class="stat-unit">K</span><span class="stat-number-accent">+</span></span>
+          <span class="stat-label">Seguidores no Instagram</span>
+        </div>
+        <div class="stat-item reveal-on-scroll delay-200">
+          <span class="stat-number" data-counter="100"><span class="count-value">100</span><span class="stat-number-accent">%</span></span>
+          <span class="stat-label">Mobília por Medida | Sonhos</span>
+        </div>
+        <div class="stat-item reveal-on-scroll delay-300">
+          <span class="stat-number" data-counter="4" data-pad="2"><span class="count-value">04</span></span>
+          <span class="stat-label">Etapas no Serviço Chave na Mão</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SOBRE NÓS — FILOSOFIA & IDENTIDADE ANGOLANA CONTEMPORÂNEA
+       ========================================================================== -->
+  <section class="about-section" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Composição Visual de Imagens -->
+        <div class="about-imagery reveal-on-scroll">
+          <div class="about-image-main-wrap">
+            <img src="assets/images/boucle-reading-nook.jpg" alt="Espaço de estar acolhedor Zanotto Interiores" class="about-image-main" loading="lazy">
+          </div>
+          <div class="about-image-floating-wrap">
+            <img src="assets/images/living-wood-slats.jpg" alt="Painel de TV ripado com iluminação cénica" class="about-image-floating" loading="lazy">
+          </div>
+          <div class="about-accent-badge">
+            <div class="about-accent-badge-title">Atelier Luanda</div>
+            <div class="about-accent-badge-text">Mobília por medida • Sonhos concretizados em Angola.</div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Editorial -->
+        <div class="about-content reveal-on-scroll delay-100">
+          <div class="section-tag">A Nossa Filosofia</div>
+          <h2 class="section-title">Onde o Rigor do Design Encontra a Alma de Angola</h2>
+          
+          <blockquote class="about-lead-quote">
+            "O verdadeiro luxo não grita; ele revela-se no toque da madeira nobre, na temperatura precisa da luz e na harmonia natural entre o espaço e quem o habita."
+          </blockquote>
+
+          <p class="about-text">
+            A <strong>Zanotto Interiores</strong> é uma referência incontornável em Angola no fabrico de mobília por medida e na conceção de ambientes exclusivos. Com mais de <strong>1.600 clientes e lares entregues</strong> e uma comunidade vibrante de mais de <strong>102.000 seguidores</strong> (@zanottoangola), materializamos sonhos através do design de autor.
+          </p>
+          <p class="about-text">
+            Cada residência ou espaço corporativo que criamos é fruto de uma profunda compreensão do estilo de vida angolano: valorizamos o conforto térmico, a iluminação indireta que acolhe ao entardecer e a nobreza das madeiras aplicadas com mestria na nossa marcenaria própria.
+          </p>
+
+          <!-- Pilares Estruturais -->
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <h3 class="pillar-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Marcenaria de Precisão
+              </h3>
+              <p class="pillar-desc">Produção própria à medida com corte milimétrico, ferragens de alta gama e acabamentos impecáveis.</p>
+            </div>
+            <div class="pillar-item">
+              <h3 class="pillar-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Identidade & Conforto
+              </h3>
+              <p class="pillar-desc">Diálogo entre tendências globais e elementos subtis da cultura material africana.</p>
+            </div>
+          </div>
+
+          <div>
+            <a href="#portfolio" class="btn btn-outline">
+              <span>Explorar O Nosso Portfólio</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PARCERIA DE ASSINATURA — A COZINHA DE SONHO DE ANNA JOYCE
+       ========================================================================== -->
+  <section class="celebrity-partnership-section" id="parceria-anna-joyce">
+    <div class="container">
+      <div class="celebrity-grid">
+        
+        <!-- Vídeo Interativo com Som e Controlos -->
+        <div class="celebrity-media-container reveal-on-scroll">
+          <div class="celebrity-video-card">
+            <video id="anna-joyce-video" class="celebrity-video" playsinline preload="metadata" poster="assets/images/minimal-fluted-tv.jpg">
+              <source src="assets/videos/anna-joyce-kitchen.mp4" type="video/mp4">
+              O seu navegador não suporta a reprodução deste vídeo.
+            </video>
+            
+            <!-- Botão de Play Centralizado / Overlay -->
+            <button type="button" class="video-play-overlay-btn" id="play-anna-joyce-btn" aria-label="Reproduzir vídeo da cozinha de Anna Joyce">
+              <div class="play-icon-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+              </div>
+              <span class="play-label">Assistir Walkthrough Completo</span>
+            </button>
+
+            <!-- Barra de Controlo Flutuante com Ajuste de Volume -->
+            <div class="celebrity-video-controls" id="anna-joyce-controls">
+              <button type="button" class="video-action-btn" id="anna-video-toggle" title="Pausar / Reproduzir" aria-label="Pausar ou Reproduzir">
+                <svg class="icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+                <svg class="icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                  <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                </svg>
+              </button>
+
+              <div class="video-audio-group" title="Controlo de Volume">
+                <button type="button" class="audio-toggle-btn" id="anna-sound-toggle" title="Desativar Som" aria-label="Ligar ou Desligar Som">
+                  <svg class="icon-sound-on" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  </svg>
+                  <svg class="icon-sound-off" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <line x1="23" y1="9" x2="17" y2="15"></line>
+                    <line x1="17" y1="9" x2="23" y2="15"></line>
+                  </svg>
+                </button>
+                <div class="volume-slider-wrapper">
+                  <input type="range" class="volume-slider" id="anna-volume-slider" min="0" max="1" step="0.02" value="0.8" aria-label="Ajustar Volume do Vídeo">
+                </div>
+              </div>
+            </div>
+
+            <!-- Selo de Assinatura -->
+            <div class="celebrity-badge-tag">
+              <span class="badge-star">★</span>
+              <span>Projeto de Assinatura • Luanda</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conteúdo Editorial & Narrativa da Parceria -->
+        <div class="celebrity-content reveal-on-scroll delay-100">
+          <div class="section-tag">Parceria de Assinatura</div>
+          <h2 class="section-title">A Cozinha de Sonho de Anna Joyce</h2>
+          
+          <div class="celebrity-quote-box">
+            <p class="celebrity-quote-text">
+              “O quê que vocês acharam dessa cozinha? Cada detalhe foi pensado com muito amor pela equipa da Zanotto para o coração da nossa casa.”
+            </p>
+            <div class="celebrity-meta">
+              <span class="celebrity-name">Anna Joyce</span>
+              <span class="celebrity-title">Cantora & Compositora Angolana</span>
+            </div>
+          </div>
+
+          <p class="celebrity-description">
+            Quando uma das vozes mais acarinhadas e consagradas da música angolana contemporânea decidiu transformar a sua cozinha, confiou no atelier e na marcenaria de autor da <strong>Zanotto Interiores</strong>.
+          </p>
+          <p class="celebrity-description">
+            O resultado é um espaço que combina a sofisticação das linhas retas e limpas ao calor da vivência em família: torre de fornos embutida, península gourmet de refeições rápidas e ferragens europeias com fecho amortecido de última geração.
+          </p>
+
+          <!-- Destaques Técnicos do Projeto -->
+          <div class="celebrity-features-grid">
+            <div class="c-feature-item">
+              <div class="c-feature-dot"></div>
+              <div>
+                <strong>Marcenaria Termoestruturada</strong>
+                <span>Elevada resistência climática e acabamento acetinado com toque aveludado.</span>
+              </div>
+            </div>
+            <div class="c-feature-item">
+              <div class="c-feature-dot"></div>
+              <div>
+                <strong>Península Gourmet & Ilha</strong>
+                <span>Bancadas contínuas pensadas para convívio e gastronomia.</span>
+              </div>
+            </div>
+            <div class="c-feature-item">
+              <div class="c-feature-dot"></div>
+              <div>
+                <strong>Ferragens com Amortecimento</strong>
+                <span>Gavetões de extração total com fecho silencioso Blum.</span>
+              </div>
+            </div>
+            <div class="c-feature-item">
+              <div class="c-feature-dot"></div>
+              <div>
+                <strong>Iluminação Cénica Embutida</strong>
+                <span>Linhas de LED indiretas com temperatura de cor acolhedora (3000K).</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="celebrity-actions">
+            <a href="#contacto" class="btn btn-primary" id="btn-inquire-kitchen">
+              <span>Quero Uma Cozinha de Assinatura</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/244933783436?text=Ol%C3%A1%20Zanotto!%20Vi%20a%20cozinha%20da%20Anna%20Joyce%20no%20vosso%20site%20e%20gostaria%20de%20solicitar%20uma%20consulta%20para%20o%20meu%20espa%C3%A7o." target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+              <span>Orçamento no WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFÓLIO / PROJETOS DE ASSINATURA COM FILTROS & LIGHTBOX
+       ========================================================================== -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <!-- Cabeçalho da Seção com Filtros -->
+      <div class="portfolio-header">
+        <div>
+          <div class="section-tag">O Nosso Portfólio</div>
+          <h2 class="section-title">Projetos de Assinatura</h2>
+          <p class="section-description">
+            Uma galeria curada de residências, mobiliário exclusivo e espaços corporativos executados em Luanda.
+          </p>
+        </div>
+
+        <!-- Abas de Filtros Dinâmicos -->
+        <div class="filter-tabs" role="tablist" aria-label="Filtros de Portfólio">
+          <button type="button" class="filter-btn active" data-filter="all">Todos</button>
+          <button type="button" class="filter-btn" data-filter="residencial">Residencial</button>
+          <button type="button" class="filter-btn" data-filter="marcenaria">Mobiliário por Medida</button>
+        </div>
+      </div>
+
+      <!-- Grelha Assimétrica Tipo Galeria Editorial -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        
+        <!-- Projeto 1 (Zanotto Real): Living Room Ripado com TV e Iluminação -->
+        <div class="project-card span-8 reveal-on-scroll" data-category="residencial marcenaria" data-id="project-1">
+          <div class="project-image-wrap">
+            <img src="assets/images/living-wood-slats.jpg" alt="Living Room com Ripado em Madeira e Poltronas de Veludo" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-category">Residencial & Marcenaria</div>
+              <h3 class="project-title">Living Room com Ripado & Iluminação Cénica</h3>
+              <div class="project-meta">
+                <span>Talatona, Luanda</span>
+                <span class="project-view-btn">
+                  Ver Projeto
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 2 (Zanotto Real): Consola Flutuante Minimalista -->
+        <div class="project-card span-4 reveal-on-scroll delay-100" data-category="residencial marcenaria" data-id="project-2">
+          <div class="project-image-wrap">
+            <img src="assets/images/minimal-fluted-tv.jpg" alt="Móvel de TV Ripado e Espelhos Bronze" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-category">Mobiliário por Medida</div>
+              <h3 class="project-title">Consola Flutuante & Espelhos Bronze</h3>
+              <div class="project-meta">
+                <span>Miramar, Luanda</span>
+                <span class="project-view-btn">
+                  Ver Projeto
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 3 (Zanotto Real): Refúgio Bouclé & Detalhes Geométricos -->
+        <div class="project-card span-4 reveal-on-scroll" data-category="residencial" data-id="project-3">
+          <div class="project-image-wrap">
+            <img src="assets/images/boucle-reading-nook.jpg" alt="Espaço de Leitura com Poltronas Bouclé e Tapete Étnico" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-category">Residencial</div>
+              <h3 class="project-title">Refúgio Bouclé & Geometria Angolana</h3>
+              <div class="project-meta">
+                <span>Nova Vida, Luanda</span>
+                <span class="project-view-btn">
+                  Ver Projeto
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projeto 4 (Zanotto Real): Painel Marmorizado & Nichos Grafite -->
+        <div class="project-card span-8 reveal-on-scroll delay-100" data-category="residencial marcenaria" data-id="project-4">
+          <div class="project-image-wrap">
+            <img src="assets/images/marble-cove-tv.jpg" alt="Painel em Mármore Cinza e Iluminação Indireta" class="project-image" loading="lazy">
+            <div class="project-overlay">
+              <div class="project-category">Residencial & Marcenaria</div>
+              <h3 class="project-title">Painel em Pedra Marmorizada & Cinza Grafite</h3>
+              <div class="project-meta">
+                <span>Ilha de Luanda</span>
+                <span class="project-view-btn">
+                  Ver Projeto
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ATELIER & LOCALIZAÇÃO — MAPA INTERATIVO & SHOWROOM EM LUANDA
+       ========================================================================== -->
+  <section class="atelier-location-section" id="localizacao">
+    <div class="container">
+      <!-- Cabeçalho da Secção -->
+      <div class="section-header atelier-header">
+        <span class="section-tag reveal-on-scroll">O Nosso Espaço Físico</span>
+        <h2 class="section-title reveal-on-scroll delay-100">
+          Visite o Nosso Atelier <br>& Showroom em Luanda
+        </h2>
+        <div class="section-divider reveal-on-scroll delay-200"></div>
+        <p class="section-subtitle reveal-on-scroll delay-300">
+          Experimente em primeira mão as nossas texturas, acabamentos em madeira nobre, marcenaria e iluminação de atmosfera. Recebemo-lo com café de assinatura e atenção personalizada.
+        </p>
+      </div>
+
+      <div class="atelier-wrapper">
+        <!-- Cartão de Informações e Experiência -->
+        <div class="atelier-info-card reveal-on-scroll">
+          <div>
+            <div class="atelier-badge">
+              <span class="pulse-dot"></span>
+              <span>Atelier Aberto Sob Agendamento</span>
+            </div>
+
+            <h3 class="atelier-place-name">Zanotto Interiores Angola</h3>
+            <p class="atelier-place-address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Luanda Sul, Angola
+            </p>
+
+            <div class="atelier-specs-list">
+              <div class="atelier-spec-item">
+                <span class="spec-icon">🏛️</span>
+                <div>
+                  <strong>Amostras & Moodboards Táteis</strong>
+                  <span>Mármores, lamelados de madeira nobre, palhinha natural e tecidos de estofaria ao vivo.</span>
+                </div>
+              </div>
+
+              <div class="atelier-spec-item">
+                <span class="spec-icon">🖥️</span>
+                <div>
+                  <strong>Gabinete de Apresentação 3D</strong>
+                  <span>Visualize o render fotorrealista da sua futura residência ou escritório numa sala imersiva.</span>
+                </div>
+              </div>
+
+              <div class="atelier-spec-item">
+                <span class="spec-icon">🚗</span>
+                <div>
+                  <strong>Acesso Cómodo & Estacionamento</strong>
+                  <span>Segurança privada e estacionamento reservado para clientes no local.</span>
+                </div>
+              </div>
+
+              <div class="atelier-spec-item">
+                <span class="spec-icon">🕒</span>
+                <div>
+                  <strong>Horário de Atendimento</strong>
+                  <span>Segunda a Sábado • 08h00 às 18h00 (Sob Consulta/Agendamento)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões de Ação do Atelier -->
+          <div class="atelier-action-buttons">
+            <a href="https://www.google.com/maps/place/Zanotto+Interiores+Angola/@-8.9468535,13.1956752,17z/data=!3m1!4b1!4m6!3m5!1s0x1a51f5347cee3dc7:0xdee5f62a03fba757!8m2!3d-8.9468535!4d13.1982501!16s%2Fg%2F11w9fprx0z?entry=ttu" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-primary btn-map-action">
+              <span>Abrir no Google Maps</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+
+            <button type="button" class="btn btn-outline btn-map-action" id="copy-coords-btn" title="Copiar coordenadas para o GPS ou Waze">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-coords-text">Copiar Coordenadas</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Frame do Mapa Interativo -->
+        <div class="atelier-map-container reveal-on-scroll delay-200">
+          <div class="map-frame-bar">
+            <div class="map-dot-controls">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="map-title-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+              <span>Zanotto Interiores Angola • Luanda Sul</span>
+            </div>
+            <a href="https://www.google.com/maps/dir//Zanotto+Interiores+Angola/@-8.9468535,13.1982501,17z" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="map-directions-link">
+              <span>Traçar Rota</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="map-embed-wrapper">
+            <div class="map-interactive-pin-pill">
+              <span class="pin-gold-dot"></span>
+              <span>Showroom & Produção Zanotto</span>
+            </div>
+            <iframe 
+              class="google-map-iframe"
+              src="https://maps.google.com/maps?q=-8.9468535,13.1982501&z=16&output=embed"
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização do Atelier Zanotto Interiores Angola">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVIÇOS — CARDS MINIMALISTAS COM ÍCONES FINOS
+       ========================================================================== -->
+  <section class="services-section" id="servicos">
+    <div class="container">
+      <div class="services-header">
+        <div class="section-tag">As Nossas Especialidades</div>
+        <h2 class="section-title">Serviços de Excelência</h2>
+        <p class="section-description">
+          Da conceção do espaço à marcenaria de precisão, oferecemos uma resposta integrada e sem intermediários para transformar o seu ambiente.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Card 1: Design Residencial -->
+        <div class="service-card reveal-on-scroll">
+          <div class="service-top">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <div class="service-number">01 / SERVIÇO</div>
+            <h3 class="service-title">Design de Interiores Residencial</h3>
+            <p class="service-desc">
+              Conceção integral de moradias e apartamentos de luxo, estudos de circulação, modelação fotorrealista 3D e iluminação arquitetónica.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">Plantas técnicas e 3D de alta fidelidade</li>
+              <li class="service-feature-item">Projeto luminotécnico para o clima local</li>
+              <li class="service-feature-item">Acompanhamento e curadoria de materiais</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="service-cta-link">
+            Solicitar Proposta
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 2: Marcenaria Personalizada -->
+        <div class="service-card reveal-on-scroll delay-100">
+          <div class="service-top">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="service-number">02 / SERVIÇO</div>
+            <h3 class="service-title">Mobiliário & Marcenaria por Medida</h3>
+            <p class="service-desc">
+              Fabrico próprio de painéis ripados, centros de entretenimento, armários embutidos, roupeiros walk-in e cozinhas gourmet de alto padrão.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">Madeiras nobres e MDF marítimo resistente</li>
+              <li class="service-feature-item">Ferragens europeias com fecho suave</li>
+              <li class="service-feature-item">Montagem especializada e sem folgas</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="service-cta-link">
+            Personalizar Espaço
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 3: Espaços Corporativos & Comerciais -->
+        <div class="service-card reveal-on-scroll delay-200">
+          <div class="service-top">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="service-number">03 / SERVIÇO</div>
+            <h3 class="service-title">Espaços Comerciais & Corporativos</h3>
+            <p class="service-desc">
+              Arquitetura de interiores para empresas, escritórios executivos, clínicas e boutiques que transmitem autoridade, bem-estar e prestígio.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">Ergonomia e acústica profissional</li>
+              <li class="service-feature-item">Reflexo visual dos valores da sua marca</li>
+              <li class="service-feature-item">Cumprimento rigoroso de prazos</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="service-cta-link">
+            Planear Escritório
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Card 4: Consultoria & Curadoria -->
+        <div class="service-card reveal-on-scroll delay-300">
+          <div class="service-top">
+            <div class="service-icon-wrap">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <div class="service-number">04 / SERVIÇO</div>
+            <h3 class="service-title">Consultoria & Curadoria de Estilo</h3>
+            <p class="service-desc">
+              Aconselhamento direcionado de paletas cromáticas, tecidos, seleção de mobiliário solto, tapeçarias e obras de arte para ambientes já construídos.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">Diagnóstico de luz e circulação</li>
+              <li class="service-feature-item">Guia detalhado de fornecedores e compras</li>
+              <li class="service-feature-item">Renovação pontual com alto impacto</li>
+            </ul>
+          </div>
+          <a href="#contacto" class="service-cta-link">
+            Agendar Sessão
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROCESSO CRIATIVO (METODOLOGIA CHAVE NA MÃO)
+       ========================================================================== -->
+  <section class="process-section" id="processo">
+    <div class="container">
+      <div class="process-header">
+        <div class="section-tag light">Metodologia Rigorosa</div>
+        <h2 class="section-title light">Da Visão à Realidade Chave na Mão</h2>
+        <p class="section-description light">
+          Um percurso transparente e estruturado em 4 etapas para que viva o processo de criação da sua casa com total tranquilidade.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        
+        <!-- Passo 1 -->
+        <div class="process-step reveal-on-scroll">
+          <div class="step-number-container">
+            <span class="step-number">01</span>
+            <div class="step-line"></div>
+          </div>
+          <h3 class="step-title">Briefing & Diagnóstico</h3>
+          <p class="step-desc">
+            Análise detalhada das suas necessidades, hábitos quotidianos, preferências estéticas e levantamento rigoroso das medidas do espaço em Luanda.
+          </p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="process-step reveal-on-scroll delay-100">
+          <div class="step-number-container">
+            <span class="step-number">02</span>
+            <div class="step-line"></div>
+          </div>
+          <h3 class="step-title">Conceito 3D & Materiais</h3>
+          <p class="step-desc">
+            Apresentação de renderizações fotorrealistas em 3D, moodboards táteis com amostras de madeiras, pedras, tecidos e estudo luminotécnico.
+          </p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="process-step reveal-on-scroll delay-200">
+          <div class="step-number-container">
+            <span class="step-number">03</span>
+            <div class="step-line"></div>
+          </div>
+          <h3 class="step-title">Fabrico na Nossa Marcenaria</h3>
+          <p class="step-desc">
+            Produção milimétrica de todos os elementos personalizados no nosso atelier com controlo de qualidade contínuo e materiais de elevada durabilidade.
+          </p>
+        </div>
+
+        <!-- Passo 4 -->
+        <div class="process-step reveal-on-scroll delay-300">
+          <div class="step-number-container">
+            <span class="step-number">04</span>
+            <div class="step-line"></div>
+          </div>
+          <h3 class="step-title">Montagem & Chave na Mão</h3>
+          <p class="step-desc">
+            Instalação cuidada, afinação de cada puxador e porta, posicionamento do décor e entrega do espaço pronto para ser vivido em pleno.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DEPOIMENTOS DE CLIENTES (CARROSSEL DISCRETO)
+       ========================================================================== -->
+  <section class="testimonials-section" id="depoimentos">
+    <div class="container">
+      <div class="testimonials-header">
+        <div class="section-tag">A Confiança de Quem Vive Connosco</div>
+        <h2 class="section-title">O Que Dizem os Nossos Clientes</h2>
+        <p class="section-description">
+          A satisfação dos nossos clientes é o nosso maior testemunho de dedicação e qualidade em Angola.
+        </p>
+      </div>
+
+      <div class="testimonial-carousel-container reveal-on-scroll">
+        <div class="testimonial-track" id="testimonial-track">
+          
+          <!-- Slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              A Zanotto transformou completamente a nossa sala de estar e a cozinha em Talatona. O móvel ripado com a iluminação embutida é a peça mais elogiada por todos os que visitam a nossa casa. Rigor impecável nos prazos e na montagem.
+            </p>
+            <div class="testimonial-author-box">
+              <span class="testimonial-author-name">Dra. Isabel & Paulo V.</span>
+              <span class="testimonial-author-location">Condomínio em Talatona, Luanda</span>
+              <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              Procurávamos um design contemporâneo que não fosse frio, mas sim acolhedor e com a alma de Luanda. O cuidado com as madeiras e a harmonia das cores superou tudo o que tínhamos imaginado. Profissionalismo de padrão internacional.
+            </p>
+            <div class="testimonial-author-box">
+              <span class="testimonial-author-name">Eng. Manuel C.</span>
+              <span class="testimonial-author-location">Miramar, Luanda</span>
+              <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              O projeto do nosso escritório executivo na Baía de Luanda ficou sublime. Conseguiram aliar funcionalidade de alto nível a uma estética de luxo silencioso. Recomendo a Zanotto sem hesitar a qualquer empresa em Angola.
+            </p>
+            <div class="testimonial-author-box">
+              <span class="testimonial-author-name">Dr. Francisco N.</span>
+              <span class="testimonial-author-location">Torre Luanda, Baía</span>
+              <div class="testimonial-stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controlos do Carrossel -->
+        <div class="carousel-controls">
+          <button type="button" class="carousel-btn" id="prev-testimonial" aria-label="Depoimento anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button type="button" class="carousel-btn" id="next-testimonial" aria-label="Próximo depoimento">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACTO & CONSULTA
+       ========================================================================== -->
+  <section class="contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Coluna de Informações e WhatsApp Rápido -->
+        <div class="contact-info-col reveal-on-scroll">
+          <div class="section-tag">Inicie o Seu Projeto</div>
+          <h2 class="section-title">Vamos Conversar Sobre o Seu Espaço</h2>
+          <p class="section-description">
+            Estamos prontos para ouvir as suas ideias e criar uma proposta personalizada que traduza o seu estilo de vida.
+          </p>
+
+          <div class="contact-methods">
+            <!-- Telefone e WhatsApp -->
+            <div class="contact-method-card">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Telefones & WhatsApp Direto</div>
+                <div class="contact-method-value">+244 933 783 436 <br><span style="font-size: 0.9em; font-weight: 500; color: var(--text-secondary);">+244 939 069 640</span></div>
+              </div>
+            </div>
+
+            <!-- E-mail Oficial -->
+            <div class="contact-method-card">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">E-mail Corporativo</div>
+                <div class="contact-method-value">angola@zanottointeriores.com.br</div>
+              </div>
+            </div>
+
+            <!-- Instagram Oficial -->
+            <div class="contact-method-card">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Instagram Oficial (102K)</div>
+                <div class="contact-method-value">
+                  <a href="https://instagram.com/zanottoangola" target="_blank" rel="noopener noreferrer" style="color: var(--accent-active); text-decoration: underline;">@zanottoangola</a> • Verificado
+                </div>
+              </div>
+            </div>
+
+            <!-- Localização -->
+            <div class="contact-method-card">
+              <div class="contact-method-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Localização & Atendimento</div>
+                <div class="contact-method-value">Luanda, Angola • Atendimento sob Agendamento</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Caixa de Acesso Rápido ao WhatsApp -->
+          <div class="whatsapp-direct-box">
+            <div class="whatsapp-box-text">
+              <h4>Prefere conversar no WhatsApp?</h4>
+              <p>Resposta rápida pelo <strong>+244 933 783 436</strong>.</p>
+            </div>
+            <a href="https://wa.me/244933783436?text=Ol%C3%A1%20Zanotto%20Interiores!%20Gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20os%20vossos%20projetos." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+              <span>Conversar</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário Elegante de Consulta -->
+        <div class="contact-form-container reveal-on-scroll delay-100">
+          <h3 class="form-title">Agendar Reunião ou Pedir Orçamento</h3>
+          <p class="form-subtitle">Preencha os seus dados e entraremos em contacto brevemente.</p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Nome Completo *</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ex: Dr. Paulo Carvalho" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone" class="form-label">Telefone / WhatsApp *</label>
+              <input type="tel" id="form-phone" class="form-input" placeholder="Ex: +244 933 783 436" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-type" class="form-label">Tipo de Projeto</label>
+              <select id="form-type" class="form-select">
+                <option value="Residencial Completo">Design de Interiores Residencial Completo</option>
+                <option value="Marcenaria por Medida">Mobiliário & Marcenaria por Medida (Painéis, Cozinhas, Roupeiros)</option>
+                <option value="Escritório ou Corporativo">Espaço Corporativo / Escritório</option>
+                <option value="Comercial">Espaço Comercial / Boutique / Hotelaria</option>
+                <option value="Consultoria">Consultoria de Estilo & Harmonização</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Mensagem / Detalhes do Espaço</label>
+              <textarea id="form-message" class="form-textarea" placeholder="Conte-nos sobre a localização (ex: Talatona, Miramar), prazos e o que deseja criar..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Enviar Pedido de Consulta</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER — SOFISTICAÇÃO SILENCIOSA & CRÉDITOS
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Coluna da Marca -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo.png" alt="Logótipo Zanotto Interiores" class="footer-logo-img">
+            <div class="brand-text-block">
+              <span class="brand-title" style="color: #FFFFFF;">ZANOTTO</span>
+              <span class="brand-subtitle">INTERIORES</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Mobília por medida e concretização de sonhos em Luanda, Angola. Mais de 1.600 clientes entregues com mestria e autenticidade.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://instagram.com/zanottoangola" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram Zanotto Angola">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/zanottoangola" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook Zanotto Interiores Angola">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://wa.me/244933783436" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp Zanotto">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Links Rápidos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Explorar</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">Início</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre o Atelier</a></li>
+            <li><a href="#parceria-anna-joyce" class="footer-link">Parceria Anna Joyce</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfólio de Projetos</a></li>
+            <li><a href="#localizacao" class="footer-link">Atelier & Showroom</a></li>
+            <li><a href="#servicos" class="footer-link">Os Nossos Serviços</a></li>
+            <li><a href="#processo" class="footer-link">Metodologia 4 Etapas</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Serviços -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Especialidades</h4>
+          <ul class="footer-links">
+            <li><a href="#servicos" class="footer-link">Design Residencial</a></li>
+            <li><a href="#servicos" class="footer-link">Mobília por Medida</a></li>
+            <li><a href="#servicos" class="footer-link">Painéis Ripados Acústicos</a></li>
+            <li><a href="#servicos" class="footer-link">Cozinhas Gourmet</a></li>
+            <li><a href="#servicos" class="footer-link">Escritórios Corporativos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Contactos -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Luanda • Angola</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+244933783436" class="footer-link">+244 933 783 436</a></li>
+            <li><a href="tel:+244939069640" class="footer-link">+244 939 069 640</a></li>
+            <li><a href="mailto:angola@zanottointeriores.com.br" class="footer-link">angola@zanottointeriores.com.br</a></li>
+            <li><span class="footer-link">Luanda, Angola</span></li>
+            <li><span class="footer-link">Seg a Sáb • 08h às 18h</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Barra Inferior de Direitos de Autor -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2026</span> Zanotto Interiores. Todos os direitos reservados. Luanda, Angola.
+        </div>
+        <a href="#inicio" class="back-to-top-btn" aria-label="Voltar ao topo da página">
+          <span>Voltar ao Topo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL / LIGHTBOX DE PROJETO
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Detalhes do Projeto">
+    <div class="lightbox-content">
+      <!-- Botão Fechar -->
+      <button type="button" class="lightbox-close-btn" id="lightbox-close" aria-label="Fechar janela modal">&times;</button>
+      
+      <!-- Contentor de Imagem / Vídeo -->
+      <div class="lightbox-media" id="lightbox-media-container"></div>
+
+      <!-- Informações do Projeto -->
+      <div class="lightbox-info">
+        <div>
+          <div class="lightbox-category" id="lightbox-cat">Residencial</div>
+          <h2 class="lightbox-title" id="lightbox-title">Título do Projeto</h2>
+          <p class="lightbox-desc" id="lightbox-desc">Descrição detalhada do conceito arquitetónico.</p>
+
+          <!-- Especificações Técnicas -->
+          <div class="lightbox-specs">
+            <div class="spec-item">
+              <span class="spec-label">Localização</span>
+              <span class="spec-value" id="lightbox-location">Talatona, Luanda</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Ano de Execução</span>
+              <span class="spec-value" id="lightbox-year">2026</span>
+            </div>
+            <div class="spec-item" style="grid-column: span 2;">
+              <span class="spec-label">Materiais & Acabamentos</span>
+              <span class="spec-value" id="lightbox-materials">Madeira ripada, luz indireta, laca fosca</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="lightbox-cta-btn" style="width: 100%;">
+          <span>Quero Um Projeto Semelhante</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/carousel.js"></script>
+</body>
+</html>

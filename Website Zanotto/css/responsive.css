@@ -1,0 +1,299 @@
+/* ==========================================================================
+   ZANOTTO INTERIORES — ESTILOS RESPONSIVOS & MOBILE
+   ========================================================================== */
+
+/* Telas Grandes e Desktops (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .process-step:nth-child(2) .step-line {
+    display: none;
+  }
+
+  .footer-top {
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-top .footer-col:last-child {
+    grid-column: span 3;
+  }
+}
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  :root {
+    --section-padding: clamp(3.5rem, 7vw, 5rem);
+  }
+
+  /* Menu Hamburguer & Mobile Drawer */
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .mobile-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .mobile-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 420px;
+    height: 100vh;
+    background: rgba(251, 251, 250, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+    gap: 1.75rem;
+    box-shadow: -15px 0 45px rgba(0, 0, 0, 0.15);
+    transition: right var(--transition-normal);
+    z-index: 1005;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.3rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--text-primary) !important;
+    text-shadow: none !important;
+  }
+
+  .nav-actions .btn-header-consult {
+    display: none;
+  }
+
+  /* Ajustes Sobre Nós */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .about-imagery {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .about-image-main-wrap {
+    width: 90%;
+  }
+
+  /* Grelha de Projetos */
+  .project-card.span-8,
+  .project-card.span-4,
+  .project-card.span-6 {
+    grid-column: span 6;
+  }
+
+  /* Parceria Anna Joyce */
+  .celebrity-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .celebrity-video-card {
+    max-width: 380px;
+  }
+
+  /* Contacto */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  /* Atelier & Mapa */
+  .atelier-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .map-embed-wrapper {
+    min-height: 420px;
+  }
+
+  /* Lightbox Modal */
+  .lightbox-content {
+    grid-template-columns: 1fr;
+    max-height: 85vh;
+  }
+
+  .lightbox-media {
+    max-height: 380px;
+  }
+}
+
+/* Dispositivos Móveis (max-width: 768px) */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 1.25rem;
+  }
+
+  .stat-item {
+    padding-left: 1rem;
+  }
+
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .filter-tabs {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0.5rem;
+    scrollbar-width: none;
+  }
+
+  .filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .project-card.span-8,
+  .project-card.span-4,
+  .project-card.span-6,
+  .project-card.span-12 {
+    grid-column: span 12;
+  }
+
+  .project-image-wrap {
+    aspect-ratio: 16/11 !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .step-line {
+    display: none !important;
+  }
+
+  .whatsapp-direct-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-top .footer-col:last-child {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .about-image-floating-wrap {
+    width: 55%;
+    bottom: -8%;
+  }
+
+  .about-pillars {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .celebrity-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .celebrity-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .celebrity-actions .btn {
+    width: 100%;
+  }
+
+  .atelier-action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .atelier-action-buttons .btn {
+    width: 100%;
+  }
+}
+
+/* Telas Ultra Pequenas (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.85rem;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+  }
+
+  .about-accent-badge {
+    position: static;
+    margin-top: 1.5rem;
+    max-width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .volume-slider-wrapper {
+    width: 58px;
+  }
+}
